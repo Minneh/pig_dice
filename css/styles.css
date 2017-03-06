@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+}
+
+#rules h3{
+  text-decoration: underline;
+}
+
+body{
+  background-image: url("../img/cartoon_pig_face.jpg");
+  background-position: top;
+}
+
+#rules{
+  float: left;
+  text-align: left;
+  border-right: 1px solid;
+}
+
+#main_window{
+  float: right;
+}
+#btn_play{
+  text-align: center;
+}
+.console{
+  display: none;
+}

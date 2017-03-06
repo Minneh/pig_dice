@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+
+    <title>Pig Dice</title>
+</head>
+
+<body>
+    <h1>Welcome to the Pig Dice Arena!</h1>
+    <div class="container">
+        <div id="rules" class="col-md-3">
+
+            <h3>How to Play</h3>
+            <p><i>The key to winning at Pig Dice is knowing when to stop rolling and end your turn. It's an exercise in deciding between <strong>gut instinct</strong> and <strong>greed</strong></i>.</p>
+            <br>
+            <strong>Step 1</strong>: Roll one die for your first turn.
+            <br>
+            <br>
+            <strong>Step 2</strong>: A roll of two, three, four, five, or six gains one the respective points. If you roll a one, you lose all the points you accumulated during that turn, and you lose your turn.
+            <br>
+            <br>
+            <strong>Step 3</strong>: One can choose to "hold" which saves the points they have so far and shifts the turn to the other player.
+            <br>
+            <br>
+            <strong>Step 4</strong>: Reach 100 points first to win the game!
+            <br>
+            <br>
+        </div>
+        <div id="main-window" class="container col-md-9">
+            <h3 style="text-align:center">Let's Play!</h3>
+
+            <div class="start">
+                <form id="player1">
+                    <div class="form-group">
+                        <label for="player1Name">Player 1 Name:</label>
+                        <input required class="player1Name form-control" type="text">
+                    </div>
+                </form>
+                <form id="player2">
+                    <div class="form-group">
+                        <label for="player2Name">Player 2 Name:</label>
+                        <input required class="player2Name form-control" type="text">
+                    </div>
+                </form>
+                <button id="start" class="btn-primary btn">Start</button>
+            </div>
+
+            <div id =  "console" class="console container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h2>Player 1: <span id = "player1Name"><span></h2>
+                        <button id="player1-roll" class="btn-primary btn">Roll Dice</button>
+                        <button id="player1-hold" class="btn-primary btn">Hold/Switch Players</button>
+                        <h2>Dice Roll: <span id="dieRoll1"></span></h2>
+                        <p>Round Total: <span id="roundTotal1"></span></p>
+                        <p>Total Score: <span id="totalScore1"></span></p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <h2>Player 2: <span id = "player2Name"><span></h2>
+                        <button id="player2-roll" class="btn-primary btn">Roll Dice</button>
+                        <button id="player2-hold" class="btn-primary btn">Hold/Switch Players</button>
+                        <h2>Dice Roll: <span id="dieRoll2"></span></h2>
+                        <p>Round Total: <span id="roundTotal2"></span></p>
+                        <p>Total Score: <span id="totalScore2"></span></p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <button id="restart" class="btn-primary btn">RESTART</button>
+                </div>
+            </div>
+            <!-- End of container div  -->
+</body>
+
+</html>
