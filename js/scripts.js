@@ -19,7 +19,6 @@ Player.prototype.rollone = function() {
   if (this.roll === 1) {
   this.tempscore = 0;
   alert("Sorry " + this.playerName + ", you rolled a 1! Your turn is over!");
-  // this.changeturn();
   } else {
   this.tempscore += this.roll;
   }
@@ -29,7 +28,7 @@ Player.prototype.rollone = function() {
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
-  alert("Your turn is over, pass the mouse!");
+  // alert("Your turn is over, pass the mouse!");
 };
 
 Player.prototype.checkWinner = function () {
@@ -53,33 +52,26 @@ var changePlayers = function() {
 $(document).ready(function() {
 
   $("button#start").click(function(event){
+    event.preventDefault();
     player1 = new Player(true);
     player2 =  new Player(false);
     $("#main-window").hide();
-    $("#console").show();
-    var player1Name = $(".player1Name").val();
+    $("#playWindow").show();
+
+    var player1Name = $("#playerOneName").val();
     $("#player1Name").text(player1Name);
 
-    var player2Name = $(".player2Name").val();
+    var player2Name = $("#playerTwoName").val();
     $("#player2Name").text(player2Name);
 
     player1.playerName = player1Name;
     player2.playerName = player2Name;
-});
-  $("button#restart").click(function(event){
-    $("#console").hide();
-    changePlayers();
-    player1.restart();
-    player2.restart();
-    $("#roundTotal1").empty();
-    $("#totalScore1").empty();
-    $("#dieRoll1").empty();
-    $("#roundTotal2").empty();
-    $("#totalScore2").empty();
-    $("#dieRoll2").empty();
 
-    $("#main-window").show();
-  });
+
+
+    alert("Got the names! " +player1Name+ "and "+player2Name);
+});
+
 
   $("button#player1-roll").click(function(event){
     player1.roll = throwdice();
@@ -110,5 +102,18 @@ $(document).ready(function() {
     $("#dieRoll2").empty();
     player2.checkWinner();
   });
+  $("button#restart").click(function(event){
+    $("#playWindow").hide();
+    changePlayers();
+    player1.restart();
+    player2.restart();
+    $("#roundTotal1").empty();
+    $("#totalScore1").empty();
+    $("#dieRoll1").empty();
+    $("#roundTotal2").empty();
+    $("#totalScore2").empty();
+    $("#dieRoll2").empty();
 
+    $("#main-window").show();
+  });
 });

@@ -38,27 +38,28 @@
             <br>
         </div>
         <div id="main-window" class="container col-md-9">
-            <h3 style="text-align:center">Let's Play!</h3>
+            <h3>Let's Play!</h3>
 
-            <div class="start">
+            <div class="names">
                 <form id="player1">
                     <div class="form-group">
                         <label for="player1Name">Player 1 Name:</label>
-                        <input required class="player1Name form-control" type="text">
+                        <input required id="playerOneName" class="player1Name form-control" type="text">
                     </div>
                 </form>
                 <form id="player2">
                     <div class="form-group">
                         <label for="player2Name">Player 2 Name:</label>
-                        <input required class="player2Name form-control" type="text">
+                        <input required id="playerTwoName" class="player2Name form-control" type="text">
                     </div>
                 </form>
                 <button id="start" class="btn-primary btn">Start</button>
             </div>
+          </div>
 
-            <div id =  "console" class="console container">
+            <div id = "playWindow" class="container">
                 <div class="row">
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4">
                         <h2>Player 1: <span id = "player1Name"><span></h2>
                         <button id="player1-roll" class="btn-primary btn">Roll Dice</button>
                         <button id="player1-hold" class="btn-primary btn">Hold/Switch Players</button>
@@ -67,7 +68,7 @@
                         <p>Total Score: <span id="totalScore1"></span></p>
                     </div>
 
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4">
                         <h2>Player 2: <span id = "player2Name"><span></h2>
                         <button id="player2-roll" class="btn-primary btn">Roll Dice</button>
                         <button id="player2-hold" class="btn-primary btn">Hold/Switch Players</button>
