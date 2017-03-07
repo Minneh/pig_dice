@@ -4,6 +4,7 @@ h1 {
 
 #rules h3{
   text-decoration: underline;
+  text-align:center;
 }
 
 body{
@@ -23,6 +24,6 @@ body{
 #btn_play{
   text-align: center;
 }
-.console{
+#playWindow{
   display: none;
 }
