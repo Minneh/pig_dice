@@ -1,6 +1,6 @@
 # Project Name: Pig Dice
 
-##Project Site: <https://minneh.github.io/pig_dice.github.io/>
+##Project Site: <https://minneh.github.io/pig_dice>
 
 ## Created by: Minneh Mugo
 
