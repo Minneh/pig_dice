@@ -17,14 +17,8 @@ A roll of two, three, four, five, or six gains one the respective points. If you
 Step 3:
 One can choose to "hold" which saves the points they have so far and shifts the turn to the other player.
 
-Tip
-Knowing when to stop rolling and end your turn is the key to winning at Pig. It's an exercise in deciding between gut instinct and greed.
-
 Step 4:
 Reach 100 points first and win the game.
-
-Step 5:
-To play with two dice, roll both for your first turn. If you roll a one on either die, you score zero for that turn and your turns ends, but if you roll two ones – or snake eyes – you lose your turn and all the points you've earned during the game.
 
 #Technologies Used:
 - HTML
@@ -33,7 +27,7 @@ To play with two dice, roll both for your first turn. If you roll a one on eithe
 
 #Setup:
 - Open your preferred browser
-- Head to the url https://minneh.github.io/pig-dice.github.io/
+- Head to the url https://minneh.github.io/pig_dice
 - Begin playing!
 
 #Contributing
