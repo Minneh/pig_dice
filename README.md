@@ -33,7 +33,7 @@ To play with two dice, roll both for your first turn. If you roll a one on eithe
 
 #Setup:
 - Open your preferred browser
-- Head to the url https://minneh.github.io/pig-dice.github.io/
+- Head to the url https://minneh.github.io/pig_dice
 - Begin playing!
 
 #Contributing
