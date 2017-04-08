@@ -28,7 +28,6 @@ Player.prototype.rollone = function() {
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
-  // alert("Your turn is over, pass the mouse!");
 };
 
 Player.prototype.checkWinner = function () {
@@ -50,7 +49,7 @@ var changePlayers = function() {
 
 // User Interface
 $(document).ready(function() {
-
+// set 
   $("button#start").click(function(event){
     event.preventDefault();
     player1 = new Player(true);
@@ -69,7 +68,7 @@ $(document).ready(function() {
 
 });
 
-
+// player roll functions
   $("button#player1-roll").click(function(event){
     player1.roll = throwdice();
     $("#dieRoll1").text(player1.roll);
@@ -83,7 +82,7 @@ $(document).ready(function() {
     player2.rollone();
     $("#roundTotal2").text(player2.tempscore);
   });
-
+// Player hold functions
   $("button#player1-hold").click(function(event){
     player1.hold();
     $("#totalScore1").text(player1.totalscore);
@@ -99,6 +98,8 @@ $(document).ready(function() {
     $("#dieRoll2").empty();
     player2.checkWinner();
   });
+
+  // reset all values to start game afresh
   $("button#restart").click(function(event){
     $("#playWindow").hide();
     changePlayers();
