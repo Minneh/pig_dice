@@ -12,18 +12,17 @@ body{
   background-position: top;
 }
 
+/*Send rules section to left of screen*/
 #rules{
   float: left;
   text-align: left;
   border-right: 1px solid;
 }
-
+/*Send main window section to right of screen*/
 #main_window{
   float: right;
 }
-#btn_play{
-  text-align: center;
-}
+/*Hide play buttons on load*/
 #playWindow{
   display: none;
 }
