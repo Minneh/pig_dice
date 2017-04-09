@@ -5,7 +5,7 @@ var player2="";
 var throwdice = function () {
   return Math.floor(Math.random()*6)+1;
 };
-
+// initialise Player variables
 function Player(turn) {
   this.roll = 0;
   this.tempscore = 0;
@@ -49,14 +49,14 @@ var changePlayers = function() {
 
 // User Interface
 $(document).ready(function() {
-// set 
+// set
   $("button#start").click(function(event){
-    event.preventDefault();
+    event.preventDefault(); //prevent page reload
     player1 = new Player(true);
     player2 =  new Player(false);
     $("#main-window").hide();
     $("#playWindow").show();
-
+ // set player input names to displayed variables
     var player1Name = $("#playerOneName").val();
     $("#player1Name").text(player1Name);
 
